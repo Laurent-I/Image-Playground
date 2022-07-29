@@ -1,9 +1,11 @@
 from PIL import Image, ImageFilter
 
-img = Image.open('./Pokedex/004 pikachu.jpg')
-filtered_img = img.filter(ImageFilter.BLUR)
+img = Image.open('./Pokedex/DSC02574.JPG')
+img.thumbnail((400, 400))
+img.save('thumbnail.jpg')
+# filtered_img = img.filter(ImageFilter.BLUR)
 # filtered_img = img.convert('L')
-filtered_img.save('grey.png', 'png')
+# filtered_img.save('grey.png', 'png')
 # filtered_img.rotate(90)
 # filtered_img.resize((300, 300))
 # filtered_img.show()
